@@ -31,9 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-
 /* Intro */
 .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100vh;
 
@@ -42,7 +44,40 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+.intro__inner{
+    width: 100%;
+    max-width: 550px;
+    margin: auto 0;
+}
 
+.intro__title {
+    color: azure;
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 30px auto 0;
+    background-color: azure;
+    
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-size: 72px;
+    color: azure;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+
+}
 
 /* Header */
 .header {
@@ -56,14 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-
-
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .header__logo {
     font-size: 30px;
@@ -72,12 +104,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /* Nav */
 .nav {
     font-size: 14px;
     text-transform: uppercase;
 }
-
 
 .nav__link {
     display: inline-block;
@@ -87,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     color: azure;
     text-decoration: none;
 
-    transition: color .1s linear;
+    transition: color .5s linear;
     }
 
     .nav__link:after {
@@ -104,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 1;
 
-    transition: opacity .01s ;linear;
+    transition:opacity .5s linear;
     }
 
 
@@ -116,4 +148,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:hover:after {
     display: block;
     opacity: 1;
+}
+
+
+/* Button*/
+.btn {
+    display: inline-block;
+    vertical-align: top; 
+    border: 2px solid azure;
+    padding: 10px 15px;
 }
