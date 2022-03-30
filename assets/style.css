@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
 
-    background: url(F:\VSC\Work\assets\images\2560x1440-abstract-waving-4k_1620165379.jpg) center no-repeat;
+    background: url(assets\images\2560x1440-abstract-waving-4k_1620165379.jpg) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
